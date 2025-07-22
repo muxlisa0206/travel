@@ -1,0 +1,248 @@
+#Home{
+    background-image: url(/assets/images/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.hero-content{
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    max-width: 600px;
+}
+.hero-title{
+    font-size: 62px;
+    line-height: 82px;
+}
+.hero-desc{
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 200;
+    letter-spacing: 2px;
+}
+.hero-btn{
+    padding: 12px 0;
+    text-align: center;
+    margin-right: 390px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2094E6;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+@media (max-width:620px) {
+    .hero-content{
+        text-align: center;
+    }
+    .hero-btn{
+        margin-right: 0;
+    }
+    .hero-title{
+        font-size: 42px;
+    }
+    .hero-desc{
+        font-size: 14px;
+    }
+}
+
+
+
+.about{
+    display: flex;
+    gap: 60px;
+}
+.about-img{
+    margin-top: 50px;
+    height: 500px;
+    max-width: 580px;
+    width: 100%;
+}
+.about-content{
+    margin-top: 70px;
+}
+.about-content a, .why-us a, .trips-content a{
+    color: #2094E6;
+    font-size: 18px;
+}
+.about-title, .why-us__title, .trips-title{
+    font-size: 50px;
+    line-height: 82px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+.about-desc{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.about-btn{
+    margin-top: 30px;
+    padding: 10px 38px;
+    background-color: #2094E6;
+    color: white;
+    font-size: 18px;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+@media (max-width:1160px) {
+    .about{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width:520px) {
+    .about-img{
+        height: 300px;
+    }
+}
+
+
+.why-us__content{
+    margin-top: 70px;
+    text-align: center;
+}
+.why-us__box{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+}
+.why-us__boxes{
+    max-width: 400px;
+    overflow: hidden;
+}
+.box1, .box2, .box3{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+}
+.box1{
+    background-image: url(/assets/images/italy.jpg);
+}
+.box2{
+    background-image: url(/assets/images/indonesia.jpg);
+}
+.box3{
+    background-image: url(/assets/images/thiland.jpg);
+}
+.overlay{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    text-align: center;
+    background-color: #014eb33f;
+    transform: translateY(400px);
+    transition: 0.5s;
+    color: white;
+}
+.overlay h5{
+    font-size: 22px;
+    font-weight: 400;
+}
+.overlay p{
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 30px;
+}
+.why-us__boxes:hover .overlay{
+    transform: translateY(0);
+}
+
+@media (max-width:1035px) {
+    .why-us__box{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+
+
+#Trips{
+    background-image: url(/assets/images/inside-plane.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+}
+.trips-content{
+    text-align: center;
+    margin-top: 90px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.254);
+    height: 90vh;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+.trips-link{
+    margin-top: 200px;
+}
+.trips-content p{
+    font-size: 22px;
+    line-height: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 40px;
+}
+.grid-boxes{
+    margin-top: 70px;
+    width: 267px;
+    background-color: #ffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+    border-radius: 8px;
+}
+.grid-boxes:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+.grid-boxes img{
+    width: 50px;
+}
+
+.grid-boxes h5{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: 300;
+}
+.grid-boxes p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+@media (max-width:1220px) {
+    .grid{
+        grid-template-columns: repeat(2,auto);
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media (max-width:600px) {
+    .grid{
+        grid-template-columns: repeat(1,auto);
+    }
+}
+
+

@@ -1,0 +1,44 @@
+header{
+    position: fixed;
+    width: 100%;
+    top: 10px;
+    box-shadow: 3px 3px 3px -1px rgb(185, 185, 185);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 22px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.nav-menu a:hover{
+    color: #019DB3;
+}
+.nav-btn img{
+    width: 40px;
+}
+.nav-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:800px) {
+    .nav-menu{
+        display: none;
+    }
+    .nav-btn{
+        display: block;
+        background-color: transparent;
+    }
+}
+
+
